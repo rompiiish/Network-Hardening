@@ -1,0 +1,14 @@
+=== client-kali routes ===
+10.10.10.0/24 dev eth0 proto kernel scope link src 10.10.10.10 metric 100 
+10.10.20.0/24 via 10.10.10.1 dev eth0 
+10.10.20.0/24 via 10.10.10.1 dev eth0 proto static metric 100 
+10.10.99.0/24 via 10.10.10.1 dev eth0 
+
+=== ping srv-web ===
+PING 10.10.20.10 (10.10.20.10) 56(84) bytes of data.
+64 bytes from 10.10.20.10: icmp_seq=1 ttl=62 time=2.54 ms
+64 bytes from 10.10.20.10: icmp_seq=2 ttl=62 time=2.90 ms
+
+--- 10.10.20.10 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 2.537/2.716/2.895/0.179 ms

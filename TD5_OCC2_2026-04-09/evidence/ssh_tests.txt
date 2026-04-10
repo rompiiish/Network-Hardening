@@ -1,0 +1,8 @@
+=== Positive: key login ===
+SSH_KEY_OK
+
+=== Negative: password auth disabled ===
+adminX@10.10.20.10: Permission denied (publickey).
+
+=== Negative: root login disabled ===
+root@10.10.20.10: Permission denied (publickey).

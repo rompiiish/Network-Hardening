@@ -1,0 +1,14 @@
+[sudo] password for nath: 
+71:KbdInteractiveAuthentication no
+94:UsePAM yes
+71:KbdInteractiveAuthentication no
+94:UsePAM yes
+132:PasswordAuthentication no
+133:PermitRootLogin no
+134:AllowUsers adminX
+135:PubkeyAuthentication yes
+136:MaxAuthTries 3
+137:LoginGraceTime 30
+138:KbdInteractiveAuthentication no
+139:ChallengeResponseAuthentication no
+140:UsePAM yes

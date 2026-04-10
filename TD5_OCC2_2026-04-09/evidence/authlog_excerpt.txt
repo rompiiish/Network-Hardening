@@ -1,0 +1,80 @@
+2026-04-10T18:24:33.790844+00:00 srv-web sshd[1721]: pam_unix(sshd:session): session closed for user adminX
+2026-04-10T18:24:33.799493+00:00 srv-web systemd-logind[659]: Session 16 logged out. Waiting for processes to exit.
+2026-04-10T18:24:33.800278+00:00 srv-web systemd-logind[659]: Removed session 16.
+2026-04-10T18:24:45.138130+00:00 srv-web sshd[1810]: Accepted publickey for adminX from 10.10.10.10 port 42970 ssh2: ED25519 SHA256:zIQniuQOh5dtIykbGUH674SFgnwTd2qi3IOBE5ZtaS8
+2026-04-10T18:24:45.140524+00:00 srv-web sshd[1810]: pam_unix(sshd:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:24:45.145819+00:00 srv-web systemd-logind[659]: New session 18 of user adminX.
+2026-04-10T18:24:45.166505+00:00 srv-web (systemd): pam_unix(systemd-user:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:24:52.632750+00:00 srv-web sudo:   adminX : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/adminX ; USER=root ; COMMAND=/usr/bin/cat /etc/ssh/sshd_config.d/50-cloud-init.conf
+2026-04-10T18:24:54.927599+00:00 srv-web sudo:   adminX : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/adminX ; USER=root ; COMMAND=/usr/bin/tail -n 80 /var/log/auth.log
+2026-04-10T18:24:54.938554+00:00 srv-web sshd[1885]: Received disconnect from 10.10.10.10 port 42970:11: disconnected by user
+2026-04-10T18:24:54.938843+00:00 srv-web sshd[1885]: Disconnected from user adminX 10.10.10.10 port 42970
+2026-04-10T18:24:54.941574+00:00 srv-web sshd[1810]: pam_unix(sshd:session): session closed for user adminX
+2026-04-10T18:24:54.949677+00:00 srv-web systemd-logind[659]: Session 18 logged out. Waiting for processes to exit.
+2026-04-10T18:24:54.951269+00:00 srv-web systemd-logind[659]: Removed session 18.
+2026-04-10T18:25:01.098764+00:00 srv-web CRON[1902]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-10T18:25:01.104207+00:00 srv-web CRON[1902]: pam_unix(cron:session): session closed for user root
+2026-04-10T18:25:02.734313+00:00 srv-web sshd[1900]: Accepted publickey for adminX from 10.10.10.10 port 53180 ssh2: ED25519 SHA256:zIQniuQOh5dtIykbGUH674SFgnwTd2qi3IOBE5ZtaS8
+2026-04-10T18:25:02.740697+00:00 srv-web sshd[1900]: pam_unix(sshd:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:25:02.753255+00:00 srv-web systemd-logind[659]: New session 21 of user adminX.
+2026-04-10T18:25:02.870319+00:00 srv-web sshd[1954]: Received disconnect from 10.10.10.10 port 53180:11: disconnected by user
+2026-04-10T18:25:02.871470+00:00 srv-web sshd[1954]: Disconnected from user adminX 10.10.10.10 port 53180
+2026-04-10T18:25:02.872794+00:00 srv-web sshd[1900]: pam_unix(sshd:session): session closed for user adminX
+2026-04-10T18:25:02.882708+00:00 srv-web systemd-logind[659]: Session 21 logged out. Waiting for processes to exit.
+2026-04-10T18:25:02.885050+00:00 srv-web systemd-logind[659]: Removed session 21.
+2026-04-10T18:25:04.955282+00:00 srv-web sshd[1956]: Accepted publickey for adminX from 10.10.10.10 port 53186 ssh2: ED25519 SHA256:zIQniuQOh5dtIykbGUH674SFgnwTd2qi3IOBE5ZtaS8
+2026-04-10T18:25:04.958114+00:00 srv-web sshd[1956]: pam_unix(sshd:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:25:04.963077+00:00 srv-web systemd-logind[659]: New session 22 of user adminX.
+2026-04-10T18:25:05.085492+00:00 srv-web sshd[2007]: Received disconnect from 10.10.10.10 port 53186:11: disconnected by user
+2026-04-10T18:25:05.087580+00:00 srv-web sshd[2007]: Disconnected from user adminX 10.10.10.10 port 53186
+2026-04-10T18:25:05.088368+00:00 srv-web sshd[1956]: pam_unix(sshd:session): session closed for user adminX
+2026-04-10T18:25:05.101353+00:00 srv-web systemd-logind[659]: Session 22 logged out. Waiting for processes to exit.
+2026-04-10T18:25:05.103316+00:00 srv-web systemd-logind[659]: Removed session 22.
+2026-04-10T18:26:04.267685+00:00 srv-web sshd[2017]: Accepted publickey for adminX from 10.10.10.10 port 50842 ssh2: ED25519 SHA256:zIQniuQOh5dtIykbGUH674SFgnwTd2qi3IOBE5ZtaS8
+2026-04-10T18:26:04.275154+00:00 srv-web sshd[2017]: pam_unix(sshd:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:26:04.299235+00:00 srv-web systemd-logind[659]: New session 23 of user adminX.
+2026-04-10T18:26:04.311588+00:00 srv-web (systemd): pam_unix(systemd-user:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:26:15.267122+00:00 srv-web sudo:   adminX : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/adminX ; USER=root ; COMMAND=/usr/bin/sh -c 'cat /etc/ssh/sshd_config.d/50-cloud-init.conf > /home/adminX/sshd_cloudinit_excerpt.txt'
+2026-04-10T18:26:18.754971+00:00 srv-web sudo:   adminX : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/adminX ; USER=root ; COMMAND=/usr/bin/sh -c 'tail -n 80 /var/log/auth.log > /home/adminX/authlog_excerpt.txt'
+2026-04-10T18:26:30.840677+00:00 srv-web sshd[2109]: Accepted publickey for adminX from 10.10.10.10 port 35956 ssh2: ED25519 SHA256:zIQniuQOh5dtIykbGUH674SFgnwTd2qi3IOBE5ZtaS8
+2026-04-10T18:26:30.847801+00:00 srv-web sshd[2109]: pam_unix(sshd:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:26:30.860617+00:00 srv-web systemd-logind[659]: New session 25 of user adminX.
+2026-04-10T18:26:30.978676+00:00 srv-web sshd[2160]: Received disconnect from 10.10.10.10 port 35956:11: disconnected by user
+2026-04-10T18:26:30.980481+00:00 srv-web sshd[2160]: Disconnected from user adminX 10.10.10.10 port 35956
+2026-04-10T18:26:30.981306+00:00 srv-web sshd[2109]: pam_unix(sshd:session): session closed for user adminX
+2026-04-10T18:26:30.995795+00:00 srv-web systemd-logind[659]: Session 25 logged out. Waiting for processes to exit.
+2026-04-10T18:26:30.999644+00:00 srv-web systemd-logind[659]: Removed session 25.
+2026-04-10T18:29:34.141460+00:00 srv-web sshd[2092]: Received disconnect from 10.10.10.10 port 50842:11: disconnected by user
+2026-04-10T18:29:34.149617+00:00 srv-web sshd[2092]: Disconnected from user adminX 10.10.10.10 port 50842
+2026-04-10T18:29:34.154609+00:00 srv-web sshd[2017]: pam_unix(sshd:session): session closed for user adminX
+2026-04-10T18:29:34.154869+00:00 srv-web systemd-logind[659]: Session 23 logged out. Waiting for processes to exit.
+2026-04-10T18:29:34.155949+00:00 srv-web systemd-logind[659]: Removed session 23.
+2026-04-10T18:29:48.318361+00:00 srv-web sshd[2173]: Invalid user sgraines from 10.10.10.10 port 40652
+2026-04-10T18:29:48.331006+00:00 srv-web sshd[2173]: Connection closed by invalid user sgraines 10.10.10.10 port 40652 [preauth]
+2026-04-10T18:30:17.376289+00:00 srv-web sshd[2175]: User sgraine from 10.10.10.10 not allowed because not listed in AllowUsers
+2026-04-10T18:30:17.397975+00:00 srv-web sshd[2175]: Connection closed by invalid user sgraine 10.10.10.10 port 48194 [preauth]
+2026-04-10T18:30:50.087556+00:00 srv-web login[864]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-04-10T18:30:50.089618+00:00 srv-web login[864]: PAM adding faulty module: pam_lastlog.so
+2026-04-10T18:30:52.757414+00:00 srv-web login[864]: pam_unix(login:session): session opened for user sgraine(uid=1000) by sgraine(uid=0)
+2026-04-10T18:30:52.763585+00:00 srv-web systemd-logind[659]: New session 26 of user sgraine.
+2026-04-10T18:30:52.785537+00:00 srv-web (systemd): pam_unix(systemd-user:session): session opened for user sgraine(uid=1000) by sgraine(uid=0)
+2026-04-10T18:31:30.199378+00:00 srv-web sudo:  sgraine : TTY=tty1 ; PWD=/home/sgraine ; USER=root ; COMMAND=/usr/sbin/usermod -aG sudo adlinX
+2026-04-10T18:31:30.202306+00:00 srv-web sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sgraine(uid=1000)
+2026-04-10T18:31:30.218418+00:00 srv-web sudo: pam_unix(sudo:session): session closed for user root
+2026-04-10T18:31:46.043177+00:00 srv-web sudo:  sgraine : TTY=tty1 ; PWD=/home/sgraine ; USER=root ; COMMAND=/usr/sbin/usermod -aG sudo adminX
+2026-04-10T18:31:46.046233+00:00 srv-web sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sgraine(uid=1000)
+2026-04-10T18:31:46.062946+00:00 srv-web usermod[2268]: add 'adminX' to group 'sudo'
+2026-04-10T18:31:46.063176+00:00 srv-web usermod[2268]: add 'adminX' to shadow group 'sudo'
+2026-04-10T18:31:46.079446+00:00 srv-web sudo: pam_unix(sudo:session): session closed for user root
+2026-04-10T18:31:53.391837+00:00 srv-web sudo:  sgraine : TTY=tty1 ; PWD=/home/sgraine ; USER=root ; COMMAND=/usr/sbin/usermod -aG sudo adminX
+2026-04-10T18:31:53.394250+00:00 srv-web sudo: pam_unix(sudo:session): session opened for user root(uid=0) by sgraine(uid=1000)
+2026-04-10T18:31:53.414644+00:00 srv-web sudo: pam_unix(sudo:session): session closed for user root
+2026-04-10T18:32:42.366198+00:00 srv-web sshd[2288]: Accepted publickey for adminX from 10.10.10.10 port 42136 ssh2: ED25519 SHA256:zIQniuQOh5dtIykbGUH674SFgnwTd2qi3IOBE5ZtaS8
+2026-04-10T18:32:42.368265+00:00 srv-web sshd[2288]: pam_unix(sshd:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:32:42.380791+00:00 srv-web systemd-logind[659]: New session 28 of user adminX.
+2026-04-10T18:32:42.393513+00:00 srv-web (systemd): pam_unix(systemd-user:session): session opened for user adminX(uid=1001) by adminX(uid=0)
+2026-04-10T18:32:53.018276+00:00 srv-web sudo:   adminX : TTY=pts/0 ; PWD=/home/adminX ; USER=root ; COMMAND=/usr/bin/cat /etc/ssh/sshd_config.d/50-cloud-init.conf
+2026-04-10T18:32:53.018518+00:00 srv-web sudo: pam_unix(sudo:session): session opened for user root(uid=0) by adminX(uid=1001)
+2026-04-10T18:32:53.020885+00:00 srv-web sudo: pam_unix(sudo:session): session closed for user root
+2026-04-10T18:32:53.025719+00:00 srv-web sudo:   adminX : TTY=pts/0 ; PWD=/home/adminX ; USER=root ; COMMAND=/usr/bin/tail -n 80 /var/log/auth.log
+2026-04-10T18:32:53.026482+00:00 srv-web sudo: pam_unix(sudo:session): session opened for user root(uid=0) by adminX(uid=1001)

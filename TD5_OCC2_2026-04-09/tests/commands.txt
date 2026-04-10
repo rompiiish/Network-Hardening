@@ -1,0 +1,167 @@
+Script started on 2026-04-09 12:56:38+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="77" LINES="28"]
+zsh: corrupt history file /home/nath/.zsh_history
+                                                                             
+
+]0;nath@client-kali: ~/TD5_GroupX_2026-04-09
+[0m[27m[24m[J[32m┌──([1m[32m[34mnath㉿client-kali[0m[34m[32m)-[[1m[32m[39m~/TD5_GroupX_2026-04-09[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h{
+
+  echo "=== client-kali routes ==="[K
+
+  ip route[K
+
+  echo[K
+
+  echo "=== ping gw-fw ==="[K
+
+  ping -c 2 10.10.10.1[K
+
+  echo[K
+
+  echo "=== ping srv-web ==="[K
+
+  ping -c 2 10.10.20.10[K
+
+} | tee ~/TD5_GroupX_2026-04-09/evidence/preflight_topology.txt[K[9A[59D[1m[34m{[0m[39m[1B[36me[36mc[36mh[36mo[39m [33m"[33m=[33m=[33m=[33m [33mc[33ml[33mi[33me[33mn[33mt[33m-[33mk[33ma[33ml[33mi[33m [33mr[33mo[33mu[33mt[33me[33ms[33m [33m=[33m=[33m=[33m"[39m[1B[33D[36mi[36mp[39m[1B[36me[36mc[36mh[36mo[39m[1B[36me[36mc[36mh[36mo[39m [33m"[33m=[33m=[33m=[33m [33mp[33mi[33mn[33mg[33m [33mg[33mw[33m-[33mf[33mw[33m [33m=[33m=[33m=[33m"[39m[1B[25D[36mp[36mi[36mn[36mg[39m [32m-[32mc[39m[1B[36me[36mc[36mh[36mo[39m[1B[36me[36mc[36mh[36mo[39m [33m"[33m=[33m=[33m=[33m [33mp[33mi[33mn[33mg[33m [33ms[33mr[33mv[33m-[33mw[33me[33mb[33m [33m=[33m=[33m=[33m"[39m[1B[27D[36mp[36mi[36mn[36mg[39m [32m-[32mc[39m[1B
+[1m[34m}[0m[39m [1m[34m|[0m[39m [36mt[36me[36me[39m [1m~[1m/[1mT[1mD[1m5[1m_[1mG[1mr[1mo[1mu[1mp[1mX[1m_[1m2[1m0[1m2[1m6[1m-[1m0[1m4[1m-[1m0[1m9[1m/[1me[1mv[1mi[1md[1me[1mn[1mc[1me[1m/[1mp[1mr[1me[1mf[1ml[1mi[1mg[1mh[1mt[1m_[1mt[1mo[1mp[1mo[1ml[1mo[1mg[1my[1m.[1mt[1mx[1mt[0m[?1l>[?2004l
+
+=== client-kali routes ===
+10.10.10.0/24 dev eth0 proto kernel scope link src 10.10.10.10 metric 100 
+10.10.20.0/24 via 10.10.10.1 dev eth0 
+10.10.20.0/24 via 10.10.10.1 dev eth0 proto static metric 100 
+10.10.99.0/24 via 10.10.10.1 dev eth0 
+
+=== ping gw-fw ===
+PING 10.10.10.1 (10.10.10.1) 56(84) bytes of data.
+64 bytes from 10.10.10.1: icmp_seq=1 ttl=64 time=1.13 ms
+64 bytes from 10.10.10.1: icmp_seq=2 ttl=64 time=0.949 ms
+
+--- 10.10.10.1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 0.949/1.037/1.126/0.088 ms
+
+=== ping srv-web ===
+PING 10.10.20.10 (10.10.20.10) 56(84) bytes of data.
+64 bytes from 10.10.20.10: icmp_seq=1 ttl=62 time=2.44 ms
+64 bytes from 10.10.20.10: icmp_seq=2 ttl=62 time=2.62 ms
+
+--- 10.10.20.10 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1005ms
+rtt min/avg/max/mdev = 2.443/2.532/2.621/0.089 ms
+                                                                             
+
+]0;nath@client-kali: ~/TD5_GroupX_2026-04-09
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mnath㉿client-kali[0m[34m[32m)-[[1m[32m[39m~/TD5_GroupX_2026-04-09[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hssh-keygen -t ed25519 -f ~/.ssh/id_td5 -C "adminX@td5"[54D[36ms[36ms[36mh[36m-[36mk[36me[36my[36mg[36me[36mn[39m [32m-[32mt[39m[9C[32m-[32mf[39m[15C[32m-[32mC[39m [33m"[33ma[33md[33mm[33mi[33mn[33mX[33m@[33mt[33md[33m5[33m"[39m[?1l>[?2004l
+
+Generating public/private ed25519 key pair.
+Enter passphrase for "/home/nath/.ssh/id_td5" (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/nath/.ssh/id_td5
+Your public key has been saved in /home/nath/.ssh/id_td5.pub
+The key fingerprint is:
+SHA256:zIQniuQOh5dtIykbGUH674SFgnwTd2qi3IOBE5ZtaS8 adminX@td5
+The key's randomart image is:
++--[ED25519 256]--+
+|o.               |
+|..o .  .         |
+|+o.* .o.o        |
+|=Oo*+.o*         |
+|@o@E*+  S        |
+|.@**=.           |
+|.+ooo            |
+|   o.            |
+|    .            |
++----[SHA256]-----+
+                                                                             
+
+]0;nath@client-kali: ~/TD5_GroupX_2026-04-09
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mnath㉿client-kali[0m[34m[32m)-[[1m[32m[39m~/TD5_GroupX_2026-04-09[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hssh-copy-id -i ~/.ssh/id_td5.pub adminX@10.10.20.10[51D[36ms[36ms[36mh[36m-[36mc[36mo[36mp[36my[36m-[36mi[36md[39m [32m-[32mi[39m [1m~[1m/[1m.[1ms[1ms[1mh[1m/[1mi[1md[1m_[1mt[1md[1m5[1m.[1mp[1mu[1mb[0m[19C[?1l>[?2004l
+
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/nath/.ssh/id_td5.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+
+adminX@10.10.20.10's password: 
+Permission denied, please try again.
+
+
+adminX@10.10.20.10's password: 
+Permission denied, please try again.
+
+
+adminX@10.10.20.10's password: 
+adminX@10.10.20.10: Permission denied (publickey,password).
+
+                                                                             
+
+]0;nath@client-kali: ~/TD5_GroupX_2026-04-09
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mnath㉿client-kali[0m[34m[32m)-[[1m[32m[39m~/TD5_GroupX_2026-04-09[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hssh -t nath@10.10.20.10 'sudo sshd -t && sudo systemctl restart ssh'[71D[36ms[36ms[36mh[39m [32m-[32mt[39m[21C[33m'[33ms[33mu[33md[33mo[33m [33ms[33ms[33mh[33md[33m [33m-[33mt[33m [33m&[33m&[33m [33ms[33mu[33md[33mo[33m [33ms[33my[33ms[33mt[33me[33mm[33mc[33mt[33ml[33m [33mr[33me[33ms[33mt[33ma[33mr[33mt[33m [33ms[33ms[33mh[33m'[39m[?1l>[?2004l
+
+
+nath@10.10.20.10's password: 
+[sudo] password for nath: 
+Sorry, try again.
+[sudo] password for nath: 
+Connection to 10.10.20.10 closed.
+
+                                                                             
+
+]0;nath@client-kali: ~/TD5_GroupX_2026-04-09
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mnath㉿client-kali[0m[34m[32m)-[[1m[32m[39m~/TD5_GroupX_2026-04-09[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hmkdir -p ~/TD5_GroupX_2026-04-09/evidence
+
+[K
+
+{[K
+
+  echo "=== Positive: key login ==="[K
+
+  ssh -i ~/.ssh/id_td5 adminX@10.10.20.10 "echo SSH_KEY_OK"[K
+
+  echo[K
+
+  echo "=== Negative: password auth disabled ==="[K
+
+  ssh -o PubkeyAuthentication=no adminX@10.10.20.10[K
+
+  echo[K
+
+  echo "=== Negative: root login disabled ==="[K
+
+  ssh -i ~/.ssh/id_td5 root@10.10.20.10[K
+
+} 2>&1 | tee ~/TD5_GroupX_2026-04-09/evidence/ssh_tests.txt[K[11A[55D[36mm[36mk[36md[36mi[36mr[39m [32m-[32mp[39m [1m~[1m/[1mT[1mD[1m5[1m_[1mG[1mr[1mo[1mu[1mp[1mX[1m_[1m2[1m0[1m2[1m6[1m-[1m0[1m4[1m-[1m0[1m9[1m/[1me[1mv[1mi[1md[1me[1mn[1mc[1me[0m[2B
+[1m[34m{[0m[39m[1B[1C[36me[36mc[36mh[36mo[39m [33m"[33m=[33m=[33m=[33m [33mP[33mo[33ms[33mi[33mt[33mi[33mv[33me[33m:[33m [33mk[33me[33my[33m [33ml[33mo[33mg[33mi[33mn[33m [33m=[33m=[33m=[33m"[39m[1B[34D[36ms[36ms[36mh[39m [32m-[32mi[39m [1m~[1m/[1m.[1ms[1ms[1mh[1m/[1mi[1md[1m_[1mt[1md[1m5[0m[20C[33m"[33me[33mc[33mh[33mo[33m [33mS[33mS[33mH[33m_[33mK[33mE[33mY[33m_[33mO[33mK[33m"[39m[1B[57D[36me[36mc[36mh[36mo[39m[1B[36me[36mc[36mh[36mo[39m [33m"[33m=[33m=[33m=[33m [33mN[33me[33mg[33ma[33mt[33mi[33mv[33me[33m:[33m [33mp[33ma[33ms[33ms[33mw[33mo[33mr[33md[33m [33ma[33mu[33mt[33mh[33m [33md[33mi[33ms[33ma[33mb[33ml[33me[33md[33m [33m=[33m=[33m=[33m"[39m[1B[47D[36ms[36ms[36mh[39m [32m-[32mo[39m[1B[36me[36mc[36mh[36mo[39m[1B[36me[36mc[36mh[36mo[39m [33m"[33m=[33m=[33m=[33m [33mN[33me[33mg[33ma[33mt[33mi[33mv[33me[33m:[33m [33mr[33mo[33mo[33mt[33m [33ml[33mo[33mg[33mScript started on 2026-04-09 00:35:08+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="77" LINES="28"]
+zsh: corrupt history file /home/nath/.zsh_history
+                                                                             
+
+]0;nath@client-kali: ~/TD5_GroupX_2026-04-09
+[0m[27m[24m[J[32m┌──([1m[32m[34mnath㉿client-kali[0m[34m[32m)-[[1m[32m[39m~/TD5_GroupX_2026-04-09[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hi[4mi[24m[4mi[24m[38;5;244mp a[39m[4mi[39m[4mp[24m[24m[36mi[24m[36mp[39m[36mi[36mp[36m [39m[36mi[36mp[39m[39m [39ma[1ma[0m[?1l>[?2004l[0ma
+
+1: [1;36mlo: [0m<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback [1;33m00:00:00:00:00:00[0m brd [1;33m00:00:00:00:00:00[0m
+    inet [1;35m127.0.0.1[0m/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 [1;94m::1[0m/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: [1;36meth0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m08:00:27:41:97:f3[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    inet [1;35m10.10.10.10[0m/24 brd [1;35m10.10.10.255 [0mscope global noprefixroute eth0
+       valid_lft forever preferred_lft forever
+    inet6 [1;94mfe80::a00:27ff:fe41:97f3[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+                                                                             
+
+]0;nath@client-kali: ~/TD5_GroupX_2026-04-09
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mnath㉿client-kali[0m[34m[32m)-[[1m[32m[39m~/TD5_GroupX_2026-04-09[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h
+Script done on 2026-04-10 12:24:12+02:00 [COMMAND_EXIT_CODE="0"]
