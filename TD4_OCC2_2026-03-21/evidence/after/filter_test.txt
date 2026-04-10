@@ -1,0 +1,4 @@
+Clean request:
+HTTP 200
+Blocked request:
+HTTP 403

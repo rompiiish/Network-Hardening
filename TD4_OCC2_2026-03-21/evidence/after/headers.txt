@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 21 Mar 2026 19:46:00 GMT
+Content-Type: text/html
+Content-Length: 42
+Last-Modified: Sat, 21 Mar 2026 19:39:44 GMT
+Connection: keep-alive
+ETag: "69bef400-2a"
+Strict-Transport-Security: max-age=300
+Accept-Ranges: bytes
+
