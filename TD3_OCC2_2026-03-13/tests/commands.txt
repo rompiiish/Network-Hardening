@@ -1,0 +1,24 @@
+[sensor-ids] visibility proof capture
+sudo tcpdump -i enp0s3 -c 10 'host 10.10.20.10'
+[sensor-ids] validate and reload custom rule
+sudo suricata -T -c /etc/suricata/suricata.yaml
+sudo systemctl restart suricata
+
+[client]
+┌──(kali㉿client)-[~]
+└─$ nmap -sS -sV -p 1-1000 10.10.20.10
+
+[sensor-ids] before-tuning count
+grep "2024364" /var/log/suricata/fast.log | wc -l
+[sensor-ids] reload tuned rules
+sudo suricata -T -c /etc/suricata/suricata.yaml
+sudo systemctl restart suricata
+
+[client]
+┌──(kali㉿client)-[~]
+└─$ nmap -sS -sV -p 1-1000 10.10.20.10
+
+[sensor-ids] after-tuning count
+grep "2024364" /var/log/suricata/fast.log | wc -l
+
+

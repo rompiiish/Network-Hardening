@@ -1,0 +1,10 @@
+18:46:50.482760 IP 10.10.10.10 > 10.10.20.10: ICMP echo request, id 1743, seq 0, length 8
+18:46:50.482796 IP 10.10.10.10.33459 > 10.10.20.10.https: Flags [S], seq 4149944491, win 1024, options [mss 1460], length 0
+18:46:50.482858 IP 10.10.10.10.33459 > 10.10.20.10.http: Flags [.], ack 4149944491, win 1024, length 0
+18:46:50.482862 IP 10.10.10.10 > 10.10.20.10: ICMP time stamp query id 48860 seq 0, length 20
+18:46:50.483255 IP 10.10.20.10 > 10.10.10.10: ICMP echo reply, id 1743, seq 0, length 8
+18:46:50.483259 IP 10.10.20.10.https > 10.10.10.10.33459: Flags [R.], seq 0, ack 4149944492, win 0, length 0
+18:46:50.483277 IP 10.10.20.10.http > 10.10.10.10.33459: Flags [R], seq 4149944491, win 0, length 0
+18:46:50.483280 IP 10.10.20.10 > 10.10.10.10: ICMP time stamp reply id 48860 seq 0: org 00:00:00.000, recv 18:46:51.084, xmit 18:46:51.084, length 20
+18:46:55.659817 ARP, Request who-has 10.10.20.1 tell 10.10.20.10, length 46
+18:46:55.717258 ARP, Reply 10.10.20.1 is-at 08:00:27:ac:00:53 (oui Unknown), length 46

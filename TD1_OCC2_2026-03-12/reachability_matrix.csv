@@ -1,0 +1,7 @@
+ID,Source zone,Source asset,Destination zone,Destination asset,Proto,Port,Purpose,Owner,Status
+F01,LAN,client,DMZ,srv-web,TCP,22,Remote admin during lab only,student,REVIEW 
+F02,LAN,client,DMZ,srv-web,TCP,80,Application test,app owner,ALLOW 
+F03,LAN,client,DMZ,srv-web,TCP,443,HTTPS application test if configured,app owner,REVIEW
+F04,LAN,client,DMZ,srv-web,ICMP,�,Connectivity check,lab,REVIEW
+F05,DMZ,srv-web,LAN,client-kali,TCP,�,Response traffic,auto,ALLOW 
+F06,any,any,any,any,any,any,Default deny,security,DENY

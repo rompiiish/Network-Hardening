@@ -1,0 +1,33 @@
+18:    HOME_NET: "[10.10.10.0/24,10.10.20.0/24]"
+19:    #HOME_NET: "[192.168.0.0/16]"
+20:    #HOME_NET: "[10.0.0.0/8]"
+21:    #HOME_NET: "[172.16.0.0/12]"
+22:    #HOME_NET: "any"
+23-
+24:    EXTERNAL_NET: "!$HOME_NET"
+25-    #EXTERNAL_NET: "any"
+26-
+27:    HTTP_SERVERS: "$HOME_NET"
+28:    SMTP_SERVERS: "$HOME_NET"
+29:    SQL_SERVERS: "$HOME_NET"
+30:    DNS_SERVERS: "$HOME_NET"
+31:    TELNET_SERVERS: "$HOME_NET"
+32-    AIM_SERVERS: "$EXTERNAL_NET"
+33:    DC_SERVERS: "$HOME_NET"
+34:    DNP3_SERVER: "$HOME_NET"
+35:    DNP3_CLIENT: "$HOME_NET"
+36:    MODBUS_CLIENT: "$HOME_NET"
+37:    MODBUS_SERVER: "$HOME_NET"
+38:    ENIP_CLIENT: "$HOME_NET"
+39:    ENIP_SERVER: "$HOME_NET"
+40-
+41-  port-groups:
+42-    HTTP_PORTS: "80"
+43-    SHELLCODE_PORTS: "!80"
+44-    ORACLE_PORTS: 1521
+45-    SSH_PORTS: 22
+614:af-packet:
+615-  - interface: enp0s3
+616-    # Number of receive threads. "auto" uses the number of cores
+617-    #threads: auto
+618-    # Default clusterid. AF_PACKET will load balance packets based on flow.
